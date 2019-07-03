@@ -37,11 +37,22 @@ $(function () {
 		autoplay: false,
 		autoplayTimeout: 4000,
 		autoplayHoverPause: true,
+		 responsive:{
+        0:{
+            items:1,
+        },
+        768:{
+            items:2,
+        },
+        1024:{
+            items:3,
+        }
+    }
 	});
 
 	
 	var burger = $('#burgerBtn');
-	var mobileContent = $('.main-nav');
+	var mobileContent = $('.header-nav');
 
 	burger.on('change', function () {
 		mobileContent.toggleClass('show');
@@ -49,9 +60,10 @@ $(function () {
 
 	$(document).on('click', function (e) {
 		var target = e.target;
-		if (!target.closest('.burger') && !$(target).closest(".main-nav").length) {
+		if (!target.closest('.burger') && !$(target).closest(".header-nav").length) {
 			burger.prop('checked', false);
 			mobileContent.removeClass('show');
+			console.log($(this))
 		}
 	});
 	var btn = $('.back-to-top');
