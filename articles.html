@@ -37,16 +37,34 @@
 							<li><a href="#">RU</a></li>
 							<li><a href="#">EN</a></li>
 						</ul>
-						<div class="header-search">
-							<button class="header-search-btn" aria-label="search"><img src="img/icons/seach.png" alt=""></button>
-							<input type="text" class="header-search-field">
-						</div>
+						<form action="#" method="GET" class="header-search">
+							<p class="header-search-field-wrap">
+								<input type="text" class="header-search-field">
+							</p>
+							<button type="button" class="header-search-btn" aria-label="search"><img src="img/icons/seach.png" alt=""></button>
+						</form>
 						<div class="burger d-flex d-lg-none">
 							<input type="checkbox" id="burgerBtn" class="burger-checkbox d-none">
 							<label for="burgerBtn">
 								<img src="img/icons/burger.png" alt="burger">
 							</label>
 						</div>
+						<nav class="header-nav">
+							<ul class="header-menu">
+								<li class="header-menu-item">
+									<a href="#" class="header-menu-link">Министерство</a>
+									<ul class="header-submenu">
+										<li class="header-submenu-item"><a href="#" class="header-submenu-link">Страница 1</a></li>
+										<li class="header-submenu-item"><a href="#" class="header-submenu-link">Страница 2</a></li>
+										<li class="header-submenu-item"><a href="#" class="header-submenu-link">Страница 3</a></li>
+									</ul>
+								</li>
+								<li class="header-menu-item"><a href="#" class="header-menu-link">Пресс-служба</a></li>
+								<li class="header-menu-item"><a href="#" class="header-menu-link">Деятельность</a></li>
+								<li class="header-menu-item"><a href="#" class="header-menu-link">Документы</a></li>
+								<li class="header-menu-item"><a href="#" class="header-menu-link">Интерактивные услуги</a></li>
+							</ul>
+						</nav>
 					</div>
 				</div>
 			</div>
@@ -59,7 +77,14 @@
 					</a>
 					<nav class="header-nav">
 						<ul class="header-menu">
-							<li class="header-menu-item"><a href="#" class="header-menu-link">Министерство</a></li>
+							<li class="header-menu-item">
+								<a href="#" class="header-menu-link">Министерство</a>
+								<ul class="header-submenu">
+									<li class="header-submenu-item"><a href="#" class="header-submenu-link">Страница 1</a></li>
+									<li class="header-submenu-item"><a href="#" class="header-submenu-link">Страница 2</a></li>
+									<li class="header-submenu-item"><a href="#" class="header-submenu-link">Страница 3</a></li>
+								</ul>
+							</li>
 							<li class="header-menu-item"><a href="#" class="header-menu-link">Пресс-служба</a></li>
 							<li class="header-menu-item"><a href="#" class="header-menu-link">Деятельность</a></li>
 							<li class="header-menu-item"><a href="#" class="header-menu-link">Документы</a></li>
@@ -108,7 +133,7 @@
 							<a href="#" class="tenders-block-show-all">Смотреть все</a>
 						</div>
 					</div>
-					<div class="sidebar-contacts">
+					<div class="sidebar-contacts d-none d-md-block">
 						<div class="sidebar-contacts-content">
 							<p class="sidebar-contacts-phone-text">Телефон доверия</p>
 							<a href="tel:+998712155279" class="sidebar-contacts-phone"><img src="img/icons/phone-1.png" alt="">+99871 215-52-79</a>
@@ -118,7 +143,6 @@
 					</div>
 				</aside>
 				<div class="main-content">
-
 					<div class="articles">
 						<h2 class="page-title">список статей</h2>
 						<div class="articles-content">
@@ -209,9 +233,15 @@
 								<li class="page-pagination-item"><a href="#" class="page-pagination-link"><img src="img/icons/caret-right.png" alt="icon"></a></li>
 							</ul>
 						</div>
-
 					</div>
-
+				</div>
+				<div class="sidebar-contacts d-block d-md-none">
+					<div class="sidebar-contacts-content">
+						<p class="sidebar-contacts-phone-text">Телефон доверия</p>
+						<a href="tel:+998712155279" class="sidebar-contacts-phone"><img src="img/icons/phone-1.png" alt="">+99871 215-52-79</a>
+						<p class="sidebar-contacts-callback-text">Обратная связь</p>
+						<button class="sidebar-contacts-callback-btn"><img src="img/icons/speach.png" alt="">Жалобы и предложения</button>
+					</div>
 				</div>
 			</div>
 		</div>

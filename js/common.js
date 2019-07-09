@@ -49,6 +49,30 @@ $(function () {
         }
     }
 	});
+	$('.owl-carousel.article-images').owlCarousel({
+		items: 3,
+		loop: true,
+		nav: true,
+		dots: false,
+		margin: 10,
+		navContainer: ".article-images-controls",
+		navText: '',
+		smartSpeed: 1500,
+		autoplay: false,
+		autoplayTimeout: 4000,
+		autoplayHoverPause: true,
+		 responsive:{
+        0:{
+            items:1,
+        },
+        768:{
+            items:2,
+        },
+        1024:{
+            items:3,
+        }
+    }
+	});
 
 	
 	var burger = $('#burgerBtn');
@@ -66,6 +90,10 @@ $(function () {
 			console.log($(this))
 		}
 	});
+	
+	$('.header-search-btn').on('click', function() {
+		$('.header-search-field-wrap').toggleClass('show');
+	})
 	var btn = $('.back-to-top');
 	btn.on('click', function (e) {
 		e.preventDefault();
